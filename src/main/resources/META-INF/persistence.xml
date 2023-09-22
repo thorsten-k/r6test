@@ -9,9 +9,9 @@
        
 		<properties>
 		   
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:30015/h6" />
-			<property name="javax.persistence.jdbc.user" value="postgres" />
-            <property name="javax.persistence.jdbc.password" value="postgres" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:30015/h6test" />
+			<property name="javax.persistence.jdbc.user" value="h6test" />
+            <property name="javax.persistence.jdbc.password" value="ksjNRGLOnwegbadfbre" />
 		   
       		<!-- https://thorben-janssen.com/standardized-schema-generation-data-loading-jpa-2-1/ -->
       		<!-- https://jakarta.ee/specifications/persistence/3.0/jakarta-persistence-spec-3.0.html#a12917 -->

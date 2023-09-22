@@ -49,8 +49,6 @@
 			<scope>provided</scope>
 		</dependency>
 		
-		
-		
 		<!-- Apache Commons -->
 		<dependency>
 	 		<groupId>commons-configuration</groupId>
@@ -64,14 +62,31 @@
         	</exclusions>
 		</dependency>
 		
-		<!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate.orm</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>6.1.4.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>yasson</artifactId>
+			<version>3.0.3</version>
+			<scope>compile</scope>
+		</dependency>
+
 <dependency>
-    <groupId>org.hibernate.orm</groupId>
-    <artifactId>hibernate-core</artifactId>
-    <version>6.1.4.Final</version>
+    <groupId>org.hibernate.validator</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>8.0.1.Final</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
+<dependency>
+    <groupId>org.glassfish</groupId>
+    <artifactId>jakarta.el</artifactId>
+    <version>4.0.2</version>
+    <scope>compile</scope>
 </dependency>
 
-		
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>

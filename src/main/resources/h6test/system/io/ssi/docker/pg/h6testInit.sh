@@ -10,7 +10,7 @@ psql -U postgres -h localhost -c "DROP DATABASE IF EXISTS h6test;"
 psql -U postgres -h localhost -c "DROP USER IF EXISTS h6test;"
 
 psql -U postgres -h localhost -c "CREATE USER h6test WITH PASSWORD 'tmp';"
-psql -U postgres -h localhost -c "ALTER USER h6test WITH PASSWORD 'jswne23rtsdvGKJNSKIAJNEV';"
+psql -U postgres -h localhost -c "ALTER USER h6test WITH PASSWORD 'ksjNRGLOnwegbadfbre';"
 
 psql -U postgres -h localhost -c "CREATE DATABASE h6test OWNER h6test ENCODING 'UTF8';"
 psql -U postgres -h localhost -c "ALTER ROLE h6test CONNECTION LIMIT 0;"
@@ -27,6 +27,6 @@ psql -U postgres -h localhost -d h6test -c "GRANT CREATE ON SCHEMA envers TO h6t
 psql -U postgres -h localhost -d h6test -c "GRANT pg_monitor TO h6test;"
 
 
-psql -U postgres -h localhost -c "ALTER ROLE rmmv CONNECTION LIMIT -1;"
+psql -U postgres -h localhost -c "ALTER ROLE h6test CONNECTION LIMIT -1;"
 
 unset PGPASSWORD

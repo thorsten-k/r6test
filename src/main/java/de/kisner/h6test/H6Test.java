@@ -1,4 +1,4 @@
-package de.kisner.hibernate6;
+package de.kisner.h6test;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ public class H6Test
 	public void init()
 	{
 		logger.info("Init");
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("h6");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("h6test");
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
 	}
