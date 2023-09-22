@@ -18,6 +18,7 @@ public class H6Test
 	
 	public void init()
 	{
+		logger.info("Init");
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("h6");
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
@@ -25,8 +26,9 @@ public class H6Test
 	
 	public static void main(String[] args)
 	{
-
-		logger.info("trace");
+		H6Test test = new H6Test();
+		test.init();
+		
 
 	}
 }
