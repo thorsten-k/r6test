@@ -13,15 +13,8 @@ public class R6Test
 {
 	final static Logger logger = LoggerFactory.getLogger(R6Test.class);
 	
-	public R6Test()
-	{
-		
-	}
-	
 	public static void main(String[] args)
 	{
-		R6Test test = new R6Test();
-		
 		Client client = ClientBuilder.newClient();
 		ResteasyWebTarget target = (ResteasyWebTarget)client.target(JeeslExportRestFacade.urlJeesl);
 		JeeslTestRest rest = target.proxy(JeeslTestRest.class);

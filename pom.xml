@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>de.kisner</groupId>
-	<artifactId>r6test</artifactId>
+	<groupId>de.kisner.test</groupId>
+	<artifactId>test-resteasy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>RestEasy 6 Test</name>
+	<packaging>jar</packaging>
+	<name>Minimal Test for Resteasy</name>
    
 	<properties>
 	  	<my.build.directory>target</my.build.directory>
@@ -33,13 +33,6 @@
 	</dependencyManagement>
 
 	<dependencies>
-		<!-- Jakarta EE -->
-		<dependency>
-			<groupId>jakarta.platform</groupId>
-			<artifactId>jakarta.jakartaee-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
 		<!-- JEESL -->
 		<dependency>
 			<groupId>org.jeesl</groupId>
@@ -54,7 +47,6 @@
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-client</artifactId>
-			<version>6.1.0.Final</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.jboss.logging</groupId>
@@ -72,31 +64,7 @@
             <version>3.5.3.Final</version>
 		</dependency>
 		
-		<!-- Apache Commons -->
-		<dependency>
-	 		<groupId>commons-configuration</groupId>
-			<artifactId>commons-configuration</artifactId>
-			<scope>test</scope>
-			<exclusions>
-        		<exclusion>
-        			<artifactId>commons-logging</artifactId>
-        			<groupId>commons-logging</groupId>
-        		</exclusion>
-        	</exclusions>
-		</dependency>
-		
-	
-
-		<dependency>
-		    <groupId>org.apache.logging.log4j</groupId>
-		    <artifactId>log4j-api</artifactId>
-		    <version>2.15.0</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.apache.logging.log4j</groupId>
-		    <artifactId>log4j-core</artifactId>
-		    <version>2.15.0</version>
-		</dependency>
+		<!-- Logging -->
 		<dependency>
 		    <groupId>org.apache.logging.log4j</groupId>
 		    <artifactId>log4j-slf4j-impl</artifactId>
@@ -106,8 +74,6 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>jcl-over-slf4j</artifactId>
 		</dependency>
-
-   		
 	</dependencies>
 
 	<build>
