@@ -1,8 +1,8 @@
-package de.kisner.h6test;
+package de.kisner.r6test;
 
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 import org.jeesl.api.facade.system.JeeslExportRestFacade;
-import org.jeesl.api.rest.rs.jk.io.db.JeeslIoDbRest;
+import org.jeesl.api.rest.rs.jk.system.JeeslTestRest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,6 +24,8 @@ public class R6Test
 		
 		Client client = ClientBuilder.newClient();
 		ResteasyWebTarget target = (ResteasyWebTarget)client.target(JeeslExportRestFacade.urlJeesl);
-		JeeslIoDbRest rest = target.proxy(JeeslIoDbRest.class);
+		JeeslTestRest rest = target.proxy(JeeslTestRest.class);
+		
+		logger.info("Received: "+rest.dateTimePublic());
 	}
 }
